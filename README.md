@@ -16,7 +16,7 @@ I have now worked with multiple development teams to help layout their DevOps st
 
 ![](images/devops-pipeline-complexity-scale.png?raw=true)
 
-> The listed tasks are realistically arbitrary. If your artifact is a bundled from multiple distinct repository from unique branches that need to be custom compiled and bundled with specific libraries and made to work with glue and prayers in a docker container that has to use an undocumented base image then creating the artifact may actually be the most complex part of a pipeline!
+> The listed tasks are realistically arbitrary. If your artifact is a bundled from multiple distinct repositorie nestled in sub-folders of unique branches that need to be custom compiled and bundled with specific libraries and made to work with glue and prayers in a docker container that has to use an undocumented base image then creating the artifact may actually be the most complex part of a pipeline!
 
 Many patterns are directly related to the resulting pipeline complexity of a project (but not always!).
 
