@@ -79,7 +79,11 @@ This is the practice of authoring pipeline as code to be run within the CI/CD pl
 
 ## Pattern: ConfigOps
 
-Using a git repo and devops pipelines to seed and maintain environment pipeline configuration options for other pipelines. If you are using Azure Devops this would be like keeping several env var files within a repo that, when updated via a PR, trigger's a pipeline that then updates variable groups used in other pipelines. If you are using something like Hashicorp's Consul for configuration management you might use gonsul to do similar approved updates of key pair values into Consul.
+ConfigOps, like any *Ops, starts with a git repository. In that repository is a structured set of files or directories for configuration of a project that is then delivered via pipelines to seed and maintain configuration for other pipelines in the project.
+
+If you are using Azure Devops this would be like keeping several env var files within a repo that, when updated via a PR, trigger's a pipeline that then updates variable groups used in other pipelines. If you are using Hashicorp's Consul for configuration management you might use [gonsul](https://github.com/miniclip/gonsul) to do similar pull request approved updates of key pair values into a Consul back-end.
+
+> ConfigOps can be done within the app source repository or can be done in an independent git repository. The net result is the same, an audit-able trail of changes for configuration elements used in your project pipelines.
 
 # Links
 
