@@ -128,4 +128,4 @@ While this is not meant to be a best practices guide it should be noted that the
 
 # Other Links
 
-[Initial Blog Entry](https://zacharyloeber.com/blog/2020/04/05/devops-patterns/)
+[Initial Blog Entry](https://zacharyloeber.com/blog/2020/04/14/devops-patterns/)
