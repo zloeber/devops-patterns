@@ -54,6 +54,12 @@ This is the practice of allowing developers to operate and code directly against
 
 > This is not the same as using modern programming languages to allow developers to construct their own infrastructure as part of their deployment. Using Pulumi or SaltStack, or even using straight boto3 Python modules to build out any kind of infrastructure as real code is covered in the next pattern.
 
+Some tool that can facilitate OpsDev include [Skaffold](https://skaffold.dev/), [Draft](https://draft.sh/), [Garden](https://garden.io/), [Tilt.dev](https://tilt.dev), [VS Code + Plugins](https://github.com/microsoft/vscode-azurefunctions). Anything that can remotely connect to and change a target resource or push a deployment on the fly can fall into this category.
+
+When OpsDev is being practiced without appropriate DevOps involvement devlopers tend to find their work needs to be refactored to function in the context of a proper devops pipeline. This isn't always a bad thing. If you are simply vetting out solutions and have a single development environment then OpsDev gets solutions vetted out sooner. But OpsDev should never be practiced in a production environment.
+
+The difference between OpsDev being done well and beind done dangerously is the boundary line of permissions set for deployment environments. If you maintain strict policies around how code is delivered to your important environments then OpsDev can be an enormously valuable tool for the inner-loop of your development strategy.
+
 ## Pattern: Infrastructure as Real Code
 
 This is when a 'real' programming language like TypeScript, Python, or similar is used to define and construct the target deployment infrastructure in an imperative manner instead of via declarative manifests. Pulumi is the immediate example of a tool that allows for multiple real language bindings to be used that can be used to define and create the infrastructure. SaltStack would be considered another.
