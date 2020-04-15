@@ -114,11 +114,19 @@ If you are using Azure Devops this would be like keeping several env var files w
 
 > ConfigOps can be done within the app source repository or can be done from an independent git repository. The net result is the same, an audit-able trail of changes for configuration elements used in your project pipelines.
 
+# Other Patterns
+
+There are many traditional cloud design patterns. While these are not specific to DevOps, they do provide a foundational well of knowledge that can help in making better solutions overall.
+
+[Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/) - This is on an azure site but the patterns are not Azure specific. A great list of patterns worth knowing.
+
+[Microservice Architecture](https://microservices.io/index.html) - A great resource with patterns for true microservices architectures.
+
+[The Twelve-Factor App](https://12factor.net/) - Foundational knowledge.
+
 # Additional Resources
 
 While this is not meant to be a best practices guide it should be noted that there are many other sources of such material at your disposal. Here are a few of them to get you started.
-
-[The Twelve-Factor App](https://12factor.net/)
 
 [DevOps Best Practices: A Complete Guide](https://stackify.com/devops-best-practices-a-complete-guide/)
 
@@ -128,4 +136,4 @@ While this is not meant to be a best practices guide it should be noted that the
 
 # Other Links
 
-[Initial Blog Entry](https://zacharyloeber.com/blog/2020/04/14/devops-patterns/)
+[Initial Blog Entry](https://zacharyloeber.com/blog/2020/04/devops-patterns/)
